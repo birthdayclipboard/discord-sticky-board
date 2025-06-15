@@ -1,0 +1,67 @@
+body {
+    background-color: #607d8b; /* A nice corkboard-like color */
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+h1, p {
+    color: white;
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+#notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.note {
+    background-color: #ffeb3b; /* Classic sticky note yellow */
+    width: 250px;
+    height: 250px;
+    padding: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transform: rotate(-2deg); /* Give it a slight tilt */
+    transition: transform 0.2s ease-in-out;
+
+    /* THE IMPORTANT PART: COMIC SANS! */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 1.2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.note:nth-child(2n) {
+    transform: rotate(3deg);
+    background-color: #a7ffeb; /* A different color for variety */
+}
+
+.note:nth-child(3n) {
+    transform: rotate(-4deg);
+    background-color: #ffcdd2; /* And another */
+}
+
+.note:hover {
+    transform: scale(1.1) rotate(0deg);
+    z-index: 10;
+}
+
+.note-content {
+    flex-grow: 1;
+    word-wrap: break-word; /* Ensure long text wraps */
+    overflow-y: auto;
+}
+
+.note-author {
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: right;
+    border-top: 1px dashed #333;
+    padding-top: 5px;
+    margin-top: 10px;
+}
