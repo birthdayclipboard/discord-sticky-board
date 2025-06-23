@@ -6,7 +6,7 @@
 h1, p {
     color: white;
     text-align: center;
-    font-family: 'Berkshire Swash';
+    font-family: 'Berkshire-Swash';
 }
 
 #notes-container {
@@ -27,7 +27,7 @@ h1, p {
     transition: transform 0.2s ease-in-out;
 
     /* THE IMPORTANT PART: COMIC SANS! */
-    font-family: 'Berkshire Swash';
+    font-family: 'Berkshire-Swash';
     font-size: 1.2em;
 
     display: flex;
