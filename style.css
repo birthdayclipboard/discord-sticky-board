@@ -1,13 +1,12 @@
   body {
     background-color: #607d8b; /* A nice corkboard-like color */
-    font-family: sans-serif;
     padding: 20px;
 }
 
 h1, p {
     color: white;
     text-align: center;
-    font-family: 'Berkshire Swash', sans-serif;
+    font-family: 'Berkshire Swash';
 }
 
 #notes-container {
@@ -28,7 +27,7 @@ h1, p {
     transition: transform 0.2s ease-in-out;
 
     /* THE IMPORTANT PART: COMIC SANS! */
-    font-family: 'Berkshire Swash', sans-serif;
+    font-family: 'Berkshire Swash';
     font-size: 1.2em;
 
     display: flex;
